@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>W3.CSS Template</title>
+<title>MyPortfolio</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -9,7 +9,21 @@
 body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 .w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
 .w3-third img:hover{opacity: 1} 
+.container {
+  position: relative;
+  max-width: 800px; /* Maximum width */
+  margin: 0 auto; /* Center it */
+}
 
+.container .content {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  padding: 20px; /* Some padding */
+}
 </style>
 <body class="w3-light-grey w3-content" style="max-width:1600px">
 <!-- Sidebar/menu -->
@@ -44,12 +58,12 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   
   <!-- Photo grid -->
   <div class="w3-row">
-    <div class="w3-third">
-      <img class="card-img-top" src="images/gpaplogo.png" style="width:100%" onclick="onClick(this)" alt="Global Payments Asia Pacific">
-          <!-- <div class="card-img-overlay">
+    <div class="w3-third container">
+      <img class="card-img-top" src="images/gpaplogo.png" style="width:100%" onclick="onClick(this)" alt="Global Payments Asia Pacific - Software QA">
+          <div class="content">
           	<h4 class="card-title">Global Payments Asia Pacific</h4>
           	<p class="card-text">Software QA</p>
-       	  </div> -->
+       	  </div>
       <!-- <img src="images/clients.png" style="width:100%" onclick="onClick(this)" alt="Notable Clients and Project Involvement">
         <div class="card-img-overlay">
           	<h4 class="card-title">Notable Clients</h4>
@@ -68,7 +82,7 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     </div>
 
     <div class="w3-third">
-      <img class="card-img-top" src="images/ingenicologo.png" style="width:100%" onclick="onClick(this)" alt="Ingenico">
+      <img class="card-img-top" src="images/ingenicologo.png" style="width:100%" onclick="onClick(this)" alt="Ingenico Solutions Philippines Inc., - Software QA / Estate Manager">
       	  <!-- <div class="card-img-overlay">
           	<h4 class="card-title">Ingenico Solutions</h4>
           	<p class="card-text">Software QA / Estate Manager</p>
@@ -87,7 +101,7 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     </div>
     
     <div class="w3-third">
-      <img class="card-img-top" src="images/neralogo.png" style="width:100%" onclick="onClick(this)" alt="NERA">
+      <img class="card-img-top" src="images/neralogo.png" style="width:100%" onclick="onClick(this)" alt="NERA Solutions Philippines, Inc., - Software QA / POS Tech Support">
       	  <!-- <div class="card-img-overlay">
           	<h4 class="card-title">NERA Solutions Philippines</h4>
           	<p class="card-text">Software QA / POS Tech Support</p>
@@ -195,16 +209,15 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
         <h3>PROJECT POSTS</h3>
         <ul class="w3-ul">
           <li class="w3-padding-16 w3-hover-black">
-            <img src="images/fullstack2.png" class="w3-left w3-margin-right" style="width:50px">
-            <a href="https://capstone3-ulep.vercel.app/">
+            <a href="https://capstone3-ulep.vercel.app/"><img src="images/fullstack2.png" class="w3-left w3-margin-right" style="width:50px">
             <span class="w3-large">Capstone3</span><br>
-            <span>Fullstack</span>
+            <span>Fullstack</span></a>
           </li>
           <li class="w3-padding-16 w3-hover-black">
+          	<a href="https://gitlab.com/batch218-ulep/capstone2-vercel/output">
             <img src="images/backend.png" class="w3-left w3-margin-right" style="width:50px">
-            <a href="https://gitlab.com/batch218-ulep/capstone2-vercel/output">
             <span class="w3-large">Capstone2</span><br>
-            <span>Backend Codes</span>
+            <span>Backend Codes</span> </a>
           </li> 
         </ul>
       </div>
